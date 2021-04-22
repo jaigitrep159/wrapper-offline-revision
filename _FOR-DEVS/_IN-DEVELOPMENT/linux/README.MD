@@ -1,2 +1,2 @@
-# Linux launcher 
-linux support soon
+# Linux Support
+Coming soon.
