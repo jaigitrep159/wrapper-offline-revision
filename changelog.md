@@ -2,7 +2,7 @@
 # Wrapper: Offline Changelog
 This changelog is based off [Keep a Changelog](https://keepachangelog.com) and ~~somewhat but not really~~ adheres to [Semantic Versioning](https://semver.org/). If you have no idea what that means, basically this changelog is formatted in a specific consistent way, and version numbers are formatted as X.Y.Z, X being a major not-backwards-compatible update, Y being a feature update, and X being bug fixes.
 
-## Version 1.3.0 - yyyy-mm-dd - a launcher overhaul disguised as the file importing update
+## Version 1.3.0 - yyyy-mm-dd - development hell
 ### What do I care about
 Wrapper version has been upgraded to 1.2.7, theme switching added
 ### Added
@@ -11,7 +11,7 @@ Wrapper version has been upgraded to 1.2.7, theme switching added
   - Dark mode Character Browser
   - Dark mode Character Creator
 ### Changed
-  - 
+  - Some variables are in info.bat instead of config.bat
 ### Fixed
   - HTTP-SERVER/NODEJS HASN'T STARTED windows now let you type commands inside
 
