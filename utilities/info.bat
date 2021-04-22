@@ -7,5 +7,11 @@ setlocal
 if "%SUBSCRIPT%"=="" ( start notepad.exe config.bat & exit )
 endlocal
 
+:: Wrapper: Offline version
+set WRAPPER_VER=1.3.0
+
+:: Wrapper: Offline build
+set WRAPPER_BLD=12-postReset
+
 :: Dark mode in Wrapper. Default: y
 set DARKMODE=y
