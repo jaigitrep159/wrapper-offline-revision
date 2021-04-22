@@ -69,6 +69,14 @@ header {
 	cursor: pointer;
 }
 
+.upload_dropdown {
+	width: 120px !important;
+}
+
+.upload_dropdown>menu {
+	width: 110px !important;
+}
+
 #char_dropdown {
 	width: 200px;
 }
@@ -93,7 +101,7 @@ header {
 
 #char_dropdown:hover>menu {
 	display: block;
-	cursor:default
+	cursor: default;
 }
 
 #char_dropdown>menu>a {
@@ -123,11 +131,10 @@ header {
 #char_dropdown>menu>h2 {
 	font-size: 15px;
 	color: #000;
-	margin:0;
-	padding:2px 20px;
-	font-weight:bold
+	margin: 0;
+	padding: 2px 20px;
+	font-weight: bold;
 }
-
 
 table {
 	width: 100%;

@@ -16,7 +16,7 @@ function toParamString(table) {
 		.join(" ");
 }
 function toObjectString(attrs, params) {
-	return `<object id="obj" ${Object.keys(attrs)
+	return `<object ${Object.keys(attrs)
 		.map((key) => `${key}="${attrs[key].replace(/"/g, '\\"')}"`)
 		.join(" ")}>${toParamString(params)}</object>`;
 }
@@ -39,9 +39,6 @@ module.exports = function (req, res, url) {
 				data: process.env.SWF_URL + "/cc.swf", // data: 'cc.swf',
 				type: "application/x-shockwave-flash",
 				id: "char_creator",
-				width: '960', 
-				height: '600', 
-				style:'display:block;margin-left:auto;margin-right:auto;',
 			};
 			params = {
 				flashvars: {
@@ -72,10 +69,7 @@ module.exports = function (req, res, url) {
 			attrs = {
 				data: process.env.SWF_URL + "/cc_browser.swf", // data: 'cc_browser.swf',
 				type: "application/x-shockwave-flash",
-				id: "char_creator",
-				width: '960', 
-				height: '600', 
-				style:'display:block;margin-left:auto;margin-right:auto;',
+				id: "char_browser",
 			};
 			params = {
 				flashvars: {
@@ -110,8 +104,7 @@ module.exports = function (req, res, url) {
 			attrs = {
 				data: process.env.SWF_URL + "/go_full.swf",
 				type: "application/x-shockwave-flash",
-				width: "100%",
-				height: "100%",
+				id: "video_maker",
 			};
 			params = {
 				flashvars: {
@@ -146,8 +139,7 @@ module.exports = function (req, res, url) {
 			attrs = {
 				data: process.env.SWF_URL + "/player.swf",
 				type: "application/x-shockwave-flash",
-				width: "100%",
-				height: "100%",
+				id: "video_player",
 			};
 			params = {
 				flashvars: {
