@@ -10,8 +10,8 @@ endlocal
 :: Wrapper: Offline version
 set WRAPPER_VER=1.3.0
 
-:: Wrapper: Offline build
-set WRAPPER_BLD=12-postReset
+:: Wrapper: Offline release type
+set WRAPPER_TYPE=private
 
 :: Dark mode in Wrapper. Default: y
 set DARKMODE=y
