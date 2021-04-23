@@ -21,6 +21,7 @@ The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFP
   - Character browser
   - Truncated themelist
   - Character uploading
+  - Discord RPC
 ### Changed
   - Centered character creator
 ### Fixed
@@ -28,6 +29,7 @@ The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFP
   - Voiceforge fix AKA VFProxy
   - Fullscreen in video player
   - Effects
+  - Fixed header shrinking
 
 ## Version 1.2.2 - 2020-07-06 - sufferingggggg
 ### Changed
