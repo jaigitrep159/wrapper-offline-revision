@@ -7,23 +7,26 @@ This changelog is based off [Keep a Changelog](https://keepachangelog.com) and ~
 Wrapper version has been upgraded to 1.2.7, theme switching added
 ### Added
   - Theme switching added to settings.bat
-  - Added "yme" theme
-  - Dark mode Character Browser
-  - Dark mode Character Creator
+  - Added "yme" theme (yes that's a theme)
+  - Dark mode
 ### Changed
   - Some variables are in info.bat instead of config.bat
+  - Removed VFProxy for reasons I don't want to type out because it's 12:00 AM and I'm on my phone
 ### Fixed
   - HTTP-SERVER/NODEJS HASN'T STARTED windows now let you type commands inside
 
 ## Version 1.2.3 - 2021-03-06 - i am HUNGRY FOR UPDATES!!!
 ### Added
   - Character browser
+  - Truncated themelist
+  - Character uploading
 ### Changed
   - Centered character creator
 ### Fixed
   - Remove the Voicery TTS engine following their shutdown
-  - Voiceforge fix
-  - fullscreen in video player
+  - Voiceforge fix AKA VFProxy
+  - Fullscreen in video player
+  - Effects
 
 ## Version 1.2.2 - 2020-07-06 - sufferingggggg
 ### Changed
