@@ -4,7 +4,7 @@ This changelog is based off [Keep a Changelog](https://keepachangelog.com) and ~
 
 ## Version 1.3.0 - yyyy-mm-dd - development hell
 ### What do I care about
-Wrapper version has been upgraded to 1.2.7, theme switching added
+The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFProxy has been removed.
 ### Added
   - Theme switching added to settings.bat
   - Added "yme" theme (yes that's a theme)
