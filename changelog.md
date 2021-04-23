@@ -9,6 +9,7 @@ Wrapper version has been upgraded to 1.2.7, theme switching added
   - Theme switching added to settings.bat
   - Added "yme" theme (yes that's a theme)
   - Dark mode
+  - Added info.bat
 ### Changed
   - Some variables are in info.bat instead of config.bat
   - Removed VFProxy for reasons I don't want to type out because it's 12:00 AM and I'm on my phone
