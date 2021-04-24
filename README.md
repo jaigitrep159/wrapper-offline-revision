@@ -1,9 +1,5 @@
-# NOTE
-[Don't use this repository to install Wrapper: Offline. If you want to use Wrapper: Offline, use the Installer.](https://github.com/Wrapper-Offline/Wrapper-Offline-Installer)
-server folder will be added soon
-
-# ANOTHER NOTE
-This is a development build. Do not share this to anyone that isn't a part of the development team or a beta tester.
+# Wrapper: Offline (Revision)
+After the dreaded, unstable 1.3.0 release of Wrapper: Offline, Wrapper: Offline (Revision) was created. Unlike the original Wrapper: Offline, Revision focuses on simplicity and *stability*. The rest of this .md file will explain Wrapper: Offline.
 
 # Wrapper: Offline
 After learning that GoAnimate Wrapper (a project by VisualPlugin) would be shut down, Wrapper: Offline was created. (simply called "Offline" for the rest of this page) Unlike the original project, Offline can not be shut down or "patched". You have the files all on your computer. This project is important for historical and archival purposes, as the ability to use this legacy editor and themes would be completely gone without it. Besides simply emulating the original Flash editor, some additional features and improvements have been made. And Offline will continue to get additional updates in the future.
