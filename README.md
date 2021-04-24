@@ -1,4 +1,4 @@
-# Wrapper: Offline (Revision)
+# Wrapper: Offline (Revision) - A Wrapper: Offline alternative
 After the dreaded, unstable 1.3.0 release of Wrapper: Offline, Wrapper: Offline (Revision) was created. Unlike the original Wrapper: Offline, Revision focuses on simplicity and *stability*. The rest of this .md file will explain Wrapper: Offline.
 
 # Wrapper: Offline
