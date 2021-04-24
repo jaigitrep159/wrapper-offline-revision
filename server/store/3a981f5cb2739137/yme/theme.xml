@@ -1,0 +1,3 @@
+<theme id="yme" name="yme">
+	<prop id="32755" name="babe" placeable="0" headable="1" facing="left" enable="Y" default="N"/>
+</theme>
