@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD004 MD024 -->
-# Wrapper: Offline Changelog
+# Wrapper: Offline (Revision) Changelog
 This changelog is based off [Keep a Changelog](https://keepachangelog.com) and ~~somewhat but not really~~ adheres to [Semantic Versioning](https://semver.org/). If you have no idea what that means, basically this changelog is formatted in a specific consistent way, and version numbers are formatted as X.Y.Z, X being a major not-backwards-compatible update, Y being a feature update, and X being bug fixes.
 
-## Version 1.3.0 - yyyy-mm-dd - development hell
+## Version 1.3.0 - yyyy-mm-dd - development heaven
 ### What do I care about
 The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFProxy has been removed.
 ### Added
@@ -10,11 +10,14 @@ The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFP
   - Added "yme" theme (yes that's a theme)
   - Dark mode
   - Added info.bat
+  - Exporting from Wrapper: Offline 1.3.0
 ### Changed
   - Some variables are in info.bat instead of config.bat
   - Removed VFProxy for reasons I don't want to type out because it's 12:00 AM and I'm on my phone
 ### Fixed
   - HTTP-SERVER/NODEJS HASN'T STARTED windows now let you type commands inside
+  - Indenting in import theme
+  - List.css commented
 
 ## Version 1.2.3 - 2021-03-06 - i am HUNGRY FOR UPDATES!!!
 ### Added
