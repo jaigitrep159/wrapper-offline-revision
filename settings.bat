@@ -526,16 +526,20 @@ if exist "global-light.css" (
 	:: turn off dark mode
 	ren global.css global-dark.css
 	ren list.css list-dark.css
+	ren swf.css swf-dark.css
 	:: turn on light mode
 	ren global-light.css global.css
 	ren list-light.css list.css
+	ren swf-light.css swf.css
 ) else ( 
 	:: turn off light mode
 	ren global.css global-light.css
 	ren list.css list-light.css
+	ren swf.css swf-light.css
 	:: turn on dark mode
 	ren global-dark.css global.css
 	ren list-dark.css list.css
+	ren swf-dark.css swf.css
 )
 popd
 pushd server\css
@@ -549,6 +553,23 @@ if exist "global-light.css" (
 	ren global.css global-light.css
 	:: turn on dark mode
 	ren global-dark.css global.css
+)
+popd
+pushd server\animation\414827163ad4eb60
+if exist "cc_browser-light.swf" (
+	:: turn off dark mode
+	ren cc.swf cc-dark.swf
+	ren cc_browser.swf cc_browser-dark.swf
+	:: turn on light mode
+	ren cc-light.swf cc.swf
+	ren cc_browser-light.swf cc_browser.swf
+) else ( 
+	:: turn off light mode
+	ren cc.swf cc-light.swf
+	ren cc_browser.swf cc_browser-light.swf
+	:: turn on dark mode
+	ren cc-dark.swf cc.swf
+	ren cc_browser-dark.swf cc_browser.swf
 )
 popd
 goto optionscreen
