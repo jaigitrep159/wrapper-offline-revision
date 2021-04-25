@@ -238,26 +238,21 @@ set /p ISWIDE= Is Wide?:
 echo:
 echo Which browser do you want to use for the process?
 echo:
-echo Press 1 for Basilisk
-echo Press 2 for Chromium
-echo Press 3 for your custom set browser
-echo Press 4 for your default browser
+echo Press 1 for Chromium
+echo Press 2 for your custom set browser
+echo Press 3 for your default browser
 echo:
 set /p BROWSERCHOICE= Browser:
 echo:
 if %BROWSERCHOICE%==1 (
-	echo Opening your movie in Basilisk...
-	PING -n 3 127.0.0.1>nul
-	start basilisk\Basilisk-Portable\Basilisk-Portable.exe "http://localhost:%PORT%/recordWindow?movieId=%MOVIEID%&isWide=%ISWIDE%"
-) else if %BROWSERCHOICE%==2 (
 	echo Opening your movie in Chromium...
 	PING -n 3 127.0.0.1>nul
 	start ungoogled-chromium\chrome.exe --allow-outdated-plugins --app="http://localhost:%PORT%/recordWindow?movieId=%MOVIEID%&isWide=%ISWIDE%"
-) else if %BROWSERCHOICE%==3 (
+) else if %BROWSERCHOICE%==2 (
 	echo Opening your movie in your custom set browser...
 	PING -n 3 127.0.0.1>nul
 	start %CUSTOMBROWSER% "http://localhost:%PORT%/recordWindow?movieId=%MOVIEID%&isWide=%ISWIDE%"
-) else if %BROWSERCHOICE%==4 (
+) else if %BROWSERCHOICE%==3 (
 	echo Opening your movie in your default browser...
 	PING -n 3 127.0.0.1>nul
 	start "" "http://localhost:%PORT%/recordWindow?movieId=%MOVIEID%&isWide=%ISWIDE%"
