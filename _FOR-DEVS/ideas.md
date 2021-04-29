@@ -2,9 +2,6 @@
 
 ## 1.3.0 changes
   - Make SWF pages actual HTML files (they're dynamically generated in javascript its weird)
-  - Stop using common.xml (i think this was about like trying to sort everything into their proper themes and making the import theme only show imported stuff)
-    - The import theme can have Common disabled using SWF editing 
-  - Select a theme before starting editor
   - Backup/import SAVED folder option
 
 ### Changes that can be done in settings.bat
@@ -65,3 +62,7 @@
   - Fix character copying
   - Include a copy of JPEXS Flash Dec? (mainly for far long into the centuries from now future)
   - Add option to download latest version (idk how this would've worked without github or somethin)
+  - Stop using common.xml (i think this was about like trying to sort everything into their proper themes and making the import theme only show imported stuff)
+    - The import theme can have Common disabled using SWF editing 
+  - Select a theme before starting editor
+ 
