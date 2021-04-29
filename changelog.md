@@ -4,7 +4,7 @@ This changelog is based off [Keep a Changelog](https://keepachangelog.com) and ~
 
 ## Version 1.3.0 - 2021-mm-dd - development heaven i guess
 ### What do I care about
-The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFProxy has been removed. 
+GoAnimate Wrapper version has been upgraded to 1.2.7½. Dark mode has been added. VFProxy has been removed. 
 ### Added
   - New video list/old video list switching added to settings.bat
   - Added "yme" theme (yes that's a theme)
