@@ -1,13 +1,13 @@
 # Things to add in Wrapper: Offline
 
 ## 1.3.0 changes
-  - Make SWF pages actual HTML files (they're dynamically generated in javascript its weird)
-  - Backup/import SAVED folder option
+  - Backup/import _SAVED folder option
+  - Optimized player
 
 ### Changes that can be done in settings.bat
   - Fix watermarks
   - Options for preview window (resolution, flash quality, etc)
-  - Fix debug mode (the i thing on characters)
+  - Debug mode toggle
   - Add 4:3 mode
 
 ## Near-crucial
@@ -20,6 +20,7 @@
   - Only disable HTTPS verification when needed
 
 ## Additional features
+  - Make SWF pages actual HTML files (they're dynamically generated in javascript its weird)
   - Mac/Linux launcher
   - Logs folder to see command output
   - Add Whopper easter egg
