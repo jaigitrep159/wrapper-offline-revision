@@ -2,7 +2,7 @@
 
 ## 1.3.0 changes
   - Backup/import _SAVED folder option
-  - Optimized player
+  - Optimized player flashvars
 
 ### Changes that can be done in settings.bat
   - Fix watermarks
