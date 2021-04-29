@@ -2,22 +2,24 @@
 # Wrapper: Offline (Revision) Changelog
 This changelog is based off [Keep a Changelog](https://keepachangelog.com) and ~~somewhat but not really~~ adheres to [Semantic Versioning](https://semver.org/). If you have no idea what that means, basically this changelog is formatted in a specific consistent way, and version numbers are formatted as X.Y.Z, X being a major not-backwards-compatible update, Y being a feature update, and X being bug fixes.
 
-## Version 1.3.0 - yyyy-mm-dd - development heaven
+## Version 1.3.0 - 2021-mm-dd - development heaven i guess
 ### What do I care about
-The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFProxy has been removed.
+The GA Wrapper version has been upgraded to 1.2.7. Dark mode has been added. VFProxy has been removed. 
 ### Added
-  - Theme switching added to settings.bat
+  - New video list/old video list switching added to settings.bat
   - Added "yme" theme (yes that's a theme)
-  - Dark mode
-  - Added info.bat
-  - Exporting from Wrapper: Offline 1.3.0
+  - Dark mode and gray character page swfs
+  - Added info.bat to check your Revision copy's information
+  - Exporting from Wrapper: Offline v1.3.0
 ### Changed
-  - Some variables are in info.bat instead of config.bat
-  - Removed VFProxy for reasons I don't want to type out because it's 12:00 AM and I'm on my phone
+  - Moved some variables into info.bat (WRAPPER_VER, for example)
+  - Removed VFProxy because they wanted their service to be paid and mobile-only
+  - Updated a few avatar XMLs
 ### Fixed
-  - HTTP-SERVER/NODEJS HASN'T STARTED windows now let you type commands inside
-  - Indenting in import theme
-  - List.css commented
+  - HTTP-SERVER/NODEJS HASN'T STARTED windows now let you type commands inside after closing
+  - utilites\import.bat now allows indenting inside the Imported Assets XML
+  - Common props disabled in Imported Assets
+  - wrapper\pages\list.css is now commented
 
 ## Version 1.2.3 - 2021-03-06 - i am HUNGRY FOR UPDATES!!!
 ### Added
