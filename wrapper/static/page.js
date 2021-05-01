@@ -190,44 +190,7 @@ module.exports = function (req, res, url) {
 					<a onclick="document.getElementById('file2').click()">Character</a>
 				</nav>
 			</div>	
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">CREATE A CHARACTER</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr />
-					<h2>Anime</h2>
-					<a href="/cc?themeId=anime&bs=guy">Guy</a>
-					<a href="/cc?themeId=anime&bs=girl">Girl</a>
-					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr />
-					<h2>Peepz</h2>
-					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<div class="dropdown_contain button_small">
-				<div class="dropdown_button">BROWSE CHARACTERS</div>
-				<nav class="dropdown_menu">
-					<h2>Comedy World</h2>
-					<a href="/cc_browser?themeId=family">Comedy World</a>
-					<hr />
-					<h2>Anime</h2>
-					<a href="/cc_browser?themeId=anime">Anime</a>
-					<a href="/cc_browser?themeId=ninjaanime">Ninja Anime</a>
-					<hr />
-					<h2>Peepz</h2>
-					<a href="/cc_browser?themeId=cc2">Lil' Peepz</a>
-					<a href="/cc_browser?themeId=chibi">Chibi Peepz</a>
-					<a href="/cc_browser?themeId=ninja">Chibi Ninjas</a>
-				</nav>
-			</div>
-			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
+			<a href="/pages/html/create.html" class="button_big">CREATE</a>
 		</nav>
 	</header>
 	

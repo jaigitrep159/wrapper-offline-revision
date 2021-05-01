@@ -14,7 +14,6 @@ module.exports = {
 	 * @returns {Promise<string>}
 	 */
 	save(movieZip, thumb, oldId, nëwId = oldId) {
-		// Saves the thumbnail of the respective video.
 		if (thumb && nëwId.startsWith("m-")) {
 			const n = Number.parseInt(nëwId.substr(2));
 			const thumbFile = fUtil.getFileIndex("thumb-", ".png", n);
@@ -46,7 +45,7 @@ module.exports = {
 		});
 	},
 	loadZip(mId) {
-		return new Promise((res) => {
+		return new Promise((res, rej) => {
 			const i = mId.indexOf("-");
 			const prefix = mId.substr(0, i);
 			const suffix = mId.substr(i + 1);
@@ -68,6 +67,7 @@ module.exports = {
 
 					try {
 						parse.packMovie(buffer, mId).then((pack) => {
+						parse.packXml(buffer, mId).then(v => res(v));
 							caché.saveTable(mId, pack.caché);
 							res(pack.zipBuf);
 						});
@@ -107,7 +107,7 @@ module.exports = {
 			}
 		});
 	},
-	loadThumb(movieId) {
+	thumb(movieId) {
 		return new Promise(async (res, rej) => {
 			if (!movieId.startsWith("m-")) return;
 			const n = Number.parseInt(movieId.substr(2));

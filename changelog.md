@@ -6,20 +6,21 @@ This changelog is based off [Keep a Changelog](https://keepachangelog.com) and ~
 ### What do I care about
 GoAnimate Wrapper version has been upgraded to 1.2.7½. Dark mode has been added. VFProxy has been removed. 
 ### Added
-  - New video list/old video list switching added to settings.bat
-  - Added "yme" theme (yes that's a theme)
+  - "yme" theme (yes that's a theme)
   - Dark mode and gray character page swfs
   - Added info.bat to check your Revision copy's information
   - Exporting from Wrapper: Offline v1.3.0
+  - Added the theme list from 1.3.0, while also making some important changes to it
 ### Changed
   - Moved some variables into info.bat (WRAPPER_VER, for example)
   - Removed VFProxy because they wanted their service to be paid and mobile-only
-  - Updated a few avatar XMLs
+  - Upgraded version of GoAnimate Wrapper to 1.2.7½
 ### Fixed
   - HTTP-SERVER/NODEJS HASN'T STARTED windows now let you type commands inside after closing
   - utilites\import.bat now allows indenting inside the Imported Assets XML
   - Common props disabled in Imported Assets
   - wrapper\pages\list.css is now commented
+  - Expressions, thanks to MJ
 
 ## Version 1.2.3 - 2021-03-06 - i am HUNGRY FOR UPDATES!!!
 ### Added

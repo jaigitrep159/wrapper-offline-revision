@@ -93,6 +93,14 @@ copy NUL "wrapper\_CACHÉ\_NO_REMÖVE"
 rd /q /s utilities\checks || set ERROR_DELCHECKS=y
 md utilities\checks
 
+:: Reset renders folder
+rd /q /s utilities\renders || set ERROR_DELRENDERS=y
+md utilities\renders
+
+:: Reset temp folder
+rd /q /s utilities\misc\temp || set ERROR_DELTEMP=y
+md utilities\misc\temp
+
 :: Reset settings
 del /q /s utilities\config.bat || set ERROR_DELCONFIG=y
 echo :: Wrapper: Offline Config>> utilities\config.bat
@@ -173,6 +181,16 @@ if !ERROR_DELCHECKS!==n (
 	echo Checks folder successfully deleted.
 ) else (
 	echo Checks folder could not be deleted.
+)
+if !ERROR_DELRENDERS!==n (
+	echo Renders folder successfully deleted.
+) else (
+	echo Renders folder could not be deleted.
+)
+if !ERROR_DELTEMP!==n (
+	echo Temp folder successfully deleted.
+) else (
+	echo Temp folder could not be deleted.
 )
 if !ERROR_DELCONFIG!==n (
 	echo Settings successfully deleted.
