@@ -91,7 +91,6 @@ echo Loading settings...
 if not exist utilities\config.bat ( goto configmissing )
 call utilities\config.bat
 echo:
-if !VERBOSEWRAPPER!==y ( echo Verbose mode activated. && echo:)
 goto configavailable
 
 :: Restore config
@@ -108,6 +107,7 @@ echo Loading information...
 if not exist utilities\info.bat ( goto infomissing )
 call utilities\info.bat
 echo:
+if !VERBOSEWRAPPER!==y ( echo Verbose mode activated. && echo:)
 goto infoavailable
 
 :: Restore info
