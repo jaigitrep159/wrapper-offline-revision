@@ -91,11 +91,11 @@ if !SKIPCHECKDEPENDS!==n (
 ) else ( 
 	echo ^(4^) Checking dependencies is[91m OFF [0m
 )
-:: Waveforms
-if exist "wrapper\static\info-nowave.json" (
-	echo ^(5^) Waveforms are[92m ON [0m
+:: Video List
+if exist "wrapper\pages\html\oldlist.html" (
+	echo ^(5^) Video list is set to[94m New List [0m
 ) else ( 
-	echo ^(5^) Waveforms are[91m OFF [0m
+	echo ^(5^) Video list is set to[94m Old List [0m
 )
 :: Truncated Themelist
 if exist "wrapper\_THEMES\_themelist-allthemes.xml" (
@@ -115,6 +115,8 @@ if exist "wrapper\pages\css\global-light.css" (
 ) else ( 
 	echo ^(8^) Dark mode is[91m OFF [0m
 )
+:: Watermarks (PLACEHOLDER UNTIL I MOVE IN THE FEATURE.)
+echo ^(9^) Watermarks are set to[91m OFF [0m ^(Not done yet.^)
 :: Character solid archive
 if exist "server\characters\characters.zip" (
 	echo ^(10^) Original LVM Character IDs are[91m OFF [0m
@@ -216,15 +218,15 @@ if "!choice!"=="?4" (
 	echo If you're on a new computer, or having issues with security messages, you may wanna turn this back on.
 	goto reaskoptionscreen
 )
-:: Waveforms
-if "!choice!"=="5" goto waveformchange
+:: Video List
+if "!choice!"=="5" goto videolistchange
 if "!choice!"=="?5" (
 	echo By default, waveforms for audio are generated in the video editor.
 	echo While useful, the editor freezes while it generates, which could be too annoying or slow for some.
 	echo Turning this off will simply add a repeating pre-made pattern in place of true waveforms.
 	goto reaskoptionscreen
 )
-:: Waveforms
+:: Truncated Themelist
 if "!choice!"=="6" goto allthemechange
 if "!choice!"=="?6" (
 	echo Cuts down the amount of themes that clog up the themelist in the videomaker.
@@ -462,20 +464,22 @@ set TOTOGGLE=BROWSER_TYPE
 set CFGLINE=29
 goto toggleoption
 
-:::::::::::::::
-:: Waveforms ::
-:::::::::::::::
-:waveformchange
+::::::::::::::::
+:: Video List ::
+::::::::::::::::
+:videolistchange
 echo Toggling setting...
-pushd wrapper\static
-if exist "info-nowave.json" (
-	:: disable
-	ren info.json info-wave.json
-	ren info-nowave.json info.json
+pushd wrapper\pages\html
+if exist "oldlist.html" (
+	:: disable new view
+	ren list.html newlist.html
+	:: enable old view
+	ren oldlist.html list.html
 ) else ( 
-	:: enable
-	ren info.json info-nowave.json
-	ren info-wave.json info.json
+	:: disable old view
+	ren list.html oldlist.html
+	:: enable new view
+	ren newlist.html list.html
 )
 popd
 goto optionscreen

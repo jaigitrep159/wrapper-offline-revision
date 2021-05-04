@@ -127,7 +127,7 @@ module.exports = function (req, res, url) {
 					goteam_draft_only: 1,
 					isWide: 1,
 					collab: 0,
-					nextUrl: "/html/list.html",
+					nextUrl: "/pages/html/create.html",
 				},
 				allowScriptAccess: "always",
 			};
@@ -167,7 +167,7 @@ module.exports = function (req, res, url) {
 			document.title='${title}',flashvars=${JSON.stringify(params.flashvars)}
 		</script>
 		<script>
-			if(window.location.pathname == '/player') {
+			if (window.location.pathname == "/player" || window.location.pathname == "/go_full") {
 				function hideHeader() {
 					document.getElementById("header").style.display = "none";
 				}
