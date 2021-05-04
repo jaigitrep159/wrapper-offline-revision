@@ -11,7 +11,7 @@ endlocal
 set WRAPPER_VER=1.3.0
 
 :: Wrapper: Offline (Revision) release type
-set WRAPPER_TYPE=private
+set WRAPPER_TYPE=public
 
 :: Dark mode in Wrapper. Default: y
 set DARKMODE=y
