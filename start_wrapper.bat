@@ -1,10 +1,7 @@
 :: Wrapper: Offline Launcher
-:: Original Author: benson#0411
-:: Project Runner: xomdjl_#1337
+:: Author: benson#0411
 :: License: MIT
-set WRAPPER_VER=1.3.0
-set WRAPPER_BLD=12
-title Wrapper: Offline v%WRAPPER_VER% [Initializing...]
+title Wrapper: Offline (Revision) [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -122,8 +119,9 @@ call utilities\info.bat
 
 :: Welcome, Director Ford!
 if !VERBOSEWRAPPER!==n ( cls )
-echo Wrapper: Offline
+echo Wrapper: Offline (Revision)
 echo A project from VisualPlugin adapted by Benson
+echo 
 echo Project continued by the Wrapper: Offline Team
 echo Version !WRAPPER_VER!
 echo:
