@@ -10,7 +10,7 @@ To start Revision on Windows, open start_wrapper.bat. It'll automate just about 
 If you want to import videos and characters from the original Wrapper or any other clones of it, open its folder and drag the "_SAVED" folder into Revision's "wrapper" folder. If you have already made any videos or characters, this will not work. Please only import on a new install with no saved characters or videos, or take the "_SAVED" folder in Revision out before dragging the old one in. If you want to import character IDs from the original LVM, you can paste `&original_asset_id=[ID HERE]` at the end of the link for the matching character creator.
 
 ## Updates & Support
-For support, the first thing you should do is read through faq.txt, it most likely has what you want to know. If you can't find what you need, you can join the [Discord server](https://discord.gg/Kf7BzSw). Joining the server is recommended, as there is a whole community to help you out. If you don't use Discord, you can email *upcoming* to get in contact with me directly, but don't expect nearly as quick of a response.
+For support, the first thing you should do is read through faq.txt, it most likely has what you want to know. If you can't find what you need, you can join the [Discord server](https://discord.gg/Kf7BzSw). Joining the server is mandatory if support is needed, as there is a whole community to help you out.
 
 ## Dependencies
 This program relies on Flash, Node.js and http-server to work properly. SilentCMD is also used to suppress all the extra logging noise you'd only need for troubleshooting and development. These all have been included with the project (utilities folder) to ensure full offline operation and will be installed if missing. The "wrapper" folder and http-server have their own dependencies, but they are included as well.
@@ -19,7 +19,7 @@ This program relies on Flash, Node.js and http-server to work properly. SilentCM
 Most of this project is free/libre software[1] under the MIT license. You have the freedom to run, change, and share this as much as you want.
 This includes:
   - Files in the "wrapper" folder
-  - Batch files made for Wrapper: Offline and Wrapper: Offline (Revision)
+  - Batch files made for Wrapper: Offline edited for Wrapper: Offline (Revision)
   - Node.js
   - http-server
   - SilentCMD
@@ -46,32 +46,16 @@ Original Wrapper credits:
 
 No members of the original team are officially working on Offline, even if they have contributed. Some members of the original team have asked to not be given credit, and they have been removed.
 
-Wrapper: Offline credits:
-Project Lead will have (PL) on their name and developers will have (D) on their name, to show they are officially working on Wrapper: Offline. Everyone else has simply contributed something at some point.
+Wrapper: Offline (Revision) credits:
+Project Lead will have (PL) on their name and developers will have (D) on their name, to show they are officially working on Revision. Everyone else has simply contributed something at some point.
 | Name             | Contribution                                           |
 | ---------------- | -------------------------------------------------------|
-| Benson (D)       | Wrapper: Offline                                       |
-| NathanTDA        | Logo                                                   |
-| Blukas/GoTube (D)| Import idea, Mega Comedy World 2                       |
-| VisualPlugin     | Text to speech voices                                  |
-| xomdjl_ (PL) (D) | VFProxy, Text to speech voices                         |
-| creepyjokes2000  | Waveform fix, improved actions                         |
-| JoshAnimate      | Headgear fix                                           |
-| RegularSpark     | Fixing 1.2.3 to actually work, truncated themelist     |
-| KrisAnimate      | Chromium parameter                                     |
-| narutofan420 (D) | W:O installer and updater                              |
-| 2Epik4u          | Discord rich presence                                  |
-
-Wrapper: Offline (Revision) credits:
-Project Lead will have (PL) on their name and developers will have (D) on their name, to show they are officially working on Wrapper: Offline (Revision). Everyone else has simply contributed something at some point.
-| Name             | Contribution                                           |
-| ---------------- | ------------------------------------------------------ |
 | narutofan420 (PL)| Wrapper: Offline (Revision)                            |
-| xomdjl_          | W:O project lead, VFProxy, Text to speech voices       |
 | Benson           | Wrapper: Offline                                       |
 | NathanTDA        | Logo                                                   |
 | Blukas/GoTube    | Import idea, Mega Comedy World 2                       |
 | VisualPlugin     | Text to speech voices                                  |
+| xomdjl_          | VFProxy, Text to speech voices                         |
 | creepyjokes2000  | Waveform fix, improved actions                         |
 | JoshAnimate      | Headgear fix                                           |
 | RegularSpark     | Fixing 1.2.3 to actually work, truncated themelist     |
