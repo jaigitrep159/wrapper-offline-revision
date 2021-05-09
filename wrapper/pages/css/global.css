@@ -26,11 +26,12 @@ header {
 	background: #1e1e1e;
 	color: #fff;
 	text-align: center;
+	flex-shrink: 0;
+	/* layout */
 	padding-bottom: 13px;
 	padding: 0 15px;
 	display: flex;
 	justify-content: space-between;
-	flex-shrink: 0;
 }
 /* makes the header a set height when the window is 887px wide */
 @media (min-width: 904px) {
@@ -62,10 +63,10 @@ header {
 }
 /* small buttons */
 .button_small       { background: #333 }
-.button_small:hover { background: #444; color: #d85e27 }
+.button_small:hover { background: #444; color: #da0037 }
 /* big buttons */
 .button_big {
-	background-color: #d85e27;
+	background-color: #da0037;
 	width: 160px;
 }
 .button_big:hover {
@@ -111,7 +112,7 @@ header dropdowns
 }
 .dropdown_menu>a:hover {
 	background: #222;
-	color: #d85e27;
+	color: #da0037;
 	cursor: pointer;
 }
 /* dropdown header and separation */
