@@ -1,56 +1,67 @@
+////
+//// this js starts wrapper and loads the js files
+////
+
 const env = Object.assign(process.env, require("./env"), require("./config"));
 
+///
+/// variables
+///
+const env = Object.assign(process.env, require("./env"), require("./config"));
 const http = require("http");
-const asl = require("./asset/list");
-const asL = require("./asset/load");
-const ast = require("./asset/thmb");
-const asu = require("./asset/upload");
-const chl = require("./character/load");
-const chp = require("./character/premade");
-const chr = require("./character/redirect");
-const chs = require("./character/save");
-const cht = require("./character/thmb");
-const msd = require("./misc/discord_rpc.js");
-const mvl = require("./movie/list");
-const mvL = require("./movie/load");
-const mvm = require("./movie/meta");
-const mvs = require("./movie/save");
-const mvt = require("./movie/thmb");
-const mvu = require("./movie/upload");
-const stl = require("./static/load");
-const stp = require("./static/page");
-const thl = require("./theme/list");
-const thL = require("./theme/load");
-const tsl = require("./tts/load");
-const tsv = require("./tts/voices");
+const asset_list = require("./asset/list");
+const asset_load = require("./asset/load");
+const asset_thumb = require("./asset/thmb");
+const asset_upload = require("./asset/upload");
+const char_load = require("./character/load");
+const char_premade = require("./character/premade");
+const char_redirect = require("./character/redirect");
+const char_save = require("./character/save");
+const char_thmb = require("./character/thmb");
+const movie_list = require("./movie/list");
+const movie_load = require("./movie/load");
+const movie_meta = require("./movie/meta");
+const movie_save = require("./movie/save");
+const movie_thumb = require("./movie/thmb");
+const movie_upload = require("./movie/upload");
+const static_load = require("./static/load");
+const static_page = require("./static/page");
+const theme_list = require("./theme/list");
+const theme_load = require("./theme/load");
+const tts_load = require("./tts/load");
+const tts_voices = require("./tts/voices");
 const url = require("url");
 
+///
+/// functions
+///
 const functions = [
-	asl,
-	asL,
-	ast,
-	asu,
-	chl,
-	chp,
-	chr,
-	chs,
-	cht,
-	msd,
-	mvl,
-	mvL,
-	mvm,
-	mvs,
-	mvt,
-	mvu,
-	stl,
-	stp,
-	thl,
-	thL,
-	tsl,
-	tsv
+	asset_list,
+	asset_load,
+	asset_thumb,
+	asset_upload,
+	char_load,
+	char_premade,
+	char_redirect,
+	char_save,
+	char_thmb,
+	movie_list,
+	movie_load,
+	movie_meta,
+	movie_save,
+	movie_thumb,
+	movie_upload,
+	static_load,
+	static_page,
+	theme_list,
+	theme_load,
+	tts_load,
+	tts_voices
 ];
 
-// Creates an HTTP server
+///
+/// create http server
+///
 module.exports = http
 	.createServer((req, res) => {
 		try {
@@ -69,4 +80,21 @@ module.exports = http
 	})
 	.listen(env.SERVER_PORT, console.log);
 
-// have you heard peter griffin is slow
+// Hi, Cleveland.
+// Hi Joseph. What's the story, morning glory?
+// What's the word, humming bird?
+// Have you heard Peter Griffin is slow?
+// Can he still drive a car?
+// Can he drink at a bar?
+// Will they let him have kids?
+// Is his life on the skids?
+// Hello, Mrs. Griffin, it's your neighbor Quagmire.
+// Now that Peter's mental, you probably have some needs, oh!
+// He's retarded!
+// He's retarded!
+// He's retarded!
+// He's retarded!
+// He's retarded!
+// He's retarded!
+// Peter is slow!
+console.log("Welcome to verbose mode.");

@@ -3,5 +3,5 @@
 //// it's a pretty small file
 ////
 
-/// Core part of Wrapper: Offline (Revision)
+// Core part of Wrapper: Offline (Revision)
 require("./server");
