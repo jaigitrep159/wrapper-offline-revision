@@ -1,5 +1,5 @@
 :: Wrapper: Offline Updater
-:: Author: octanuary#6596 (narutofan420)
+:: Author: octanuary#6596
 :: License: MIT
 title Wrapper: Offline Updater [Initializing...]
 
