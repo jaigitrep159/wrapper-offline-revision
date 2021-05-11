@@ -135,7 +135,7 @@ module.exports = function (req, res, url) {
 		}
 
 		case "/player": {
-			title = "Player";
+			title = "Video Player";
 			attrs = {
 				data: process.env.SWF_URL + "/player.swf",
 				type: "application/x-shockwave-flash",
@@ -148,6 +148,29 @@ module.exports = function (req, res, url) {
 					ut: 60,
 					autostart: 1,
 					isWide: 1,
+					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
+				},
+				allowScriptAccess: "always",
+				allowFullScreen: "true",
+			};
+			break;
+		}
+
+		case "/optiPlayer": {
+			title = "Video Player (Optimized)";
+			attrs = {
+				data: process.env.SWF_URL + "/player.swf",
+				type: "application/x-shockwave-flash",
+				id: "video_player",
+			};
+			params = {
+				flashvars: {
+					apiserver: "/",
+					storePath: process.env.STORE_URL + "/<store>",
+					ut: 60,
+					autostart: 0,
+					isWide: 1,
+					quality: "medium",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 				},
 				allowScriptAccess: "always",
