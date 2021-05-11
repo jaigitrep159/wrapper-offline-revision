@@ -7,7 +7,9 @@
 ///
 const RPC = require("discord-rpc");
 // loads env.json for Revision version
-const env = require('../env');
+require("../server");
+const env = Object.assign(process.env,
+	require('../env'));
 let version = env.WRAPPER_VER;
 
 ///

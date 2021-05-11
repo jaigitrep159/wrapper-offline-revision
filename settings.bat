@@ -104,7 +104,7 @@ if exist "wrapper\_THEMES\_themelist-allthemes.xml" (
 	echo ^(6^) Truncated themelist is[91m OFF [0m
 )
 :: Discord RPC
-if exist "wrapper\main-norpc.js" (
+if exist "wrapper\server-norpc.js" (
 	echo ^(7^) Discord rich prescence is[92m ON [0m
 ) else ( 
 	echo ^(7^) Discord rich prescence is[91m OFF [0m
@@ -508,14 +508,16 @@ goto optionscreen
 :rpcchange
 echo Toggling setting...
 pushd wrapper
-if exist "main-norpc.js" (
-	:: disable
-	ren main.js main-rpc.js
-	ren main-norpc.js main.js
+if exist "server-norpc.js" (
+	:: disable rpc
+	ren server.js server-rpc.js
+	:: enable norpc
+	ren server-norpc.js server.js
 ) else ( 
-	:: enable
-	ren main.js main-norpc.js
-	ren main-rpc.js main.js
+	:: disable norpc
+	ren server.js server-norpc.js
+	:: enable rpc
+	ren server-rpc.js server.js
 )
 popd
 goto optionscreen
