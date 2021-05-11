@@ -2,8 +2,6 @@
 //// this js starts wrapper and loads the js files
 ////
 
-const env = Object.assign(process.env, require("./env"), require("./config"));
-
 ///
 /// variables
 ///
