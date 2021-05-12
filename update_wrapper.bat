@@ -33,10 +33,10 @@ title Wrapper: Offline Updater
 
 if not exist .git ( goto nogit )
 :yesgit
-echo Wrapper: Offline Updater
-echo A project from VisualPlugin adapted by Benson and the Wrapper: Offline Team
+echo Wrapper: Offline (Revision) Updater
+echo Project lead by Octanuary
 echo:
-echo Enter 1 to update Wrapper: Offline
+echo Enter 1 to update Wrapper: Offline (Revision)
 echo Enter 0 to close the updater
 goto wrapperidle
 :nogit
@@ -61,7 +61,7 @@ pushd "%~dp0"
 echo Pulling repository from GitHub...
 git pull
 cls
-echo Wrapper: Offline has been updated^^!
+echo Wrapper: Offline (Revision) has been updated^^!
 start "" "%~dp0"
 pause & exit
 
