@@ -1,7 +1,7 @@
 # General Wrapper Offline Stuff
 
 wrapper/_THEMES/import.xml
-!_*/_NO_REMÖVE
+
 utilities/backups/*
 utilities/import_these/*
 utilities/renders/*
