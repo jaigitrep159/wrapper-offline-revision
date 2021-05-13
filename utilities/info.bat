@@ -15,4 +15,4 @@ set WRAPPER_VER=1.3.0
 set WRAPPER_TYPE=Beta
 
 :: Wrapper: Offline (Revision) project lead
-set PROJECT_LEAD=narutofan420
+set PROJECT_LEAD=octanuary
