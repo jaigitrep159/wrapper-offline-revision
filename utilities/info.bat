@@ -1,7 +1,7 @@
 :: Wrapper: Offline (Revision) Info
 :: This file is used across Wrapper: Offline (Revision). It is not organized, but comments for each setting have been added.
 :: You should not be touching this. Offline relies on this file remaining consistent, and it's easy to mess that up.
-@echo off
+@echo off && cls
 
 :: List everything
 echo Wrapper version: !WRAPPER_VER!
