@@ -115,8 +115,6 @@ if exist "wrapper\pages\css\global-light.css" (
 ) else ( 
 	echo ^(8^) Dark mode is[91m OFF [0m
 )
-:: Watermarks (PLACEHOLDER UNTIL I MOVE IN THE FEATURE.)
-echo ^(9^) Watermarks are set to[91m OFF [0m ^(Not done yet.^)
 :: Character solid archive
 if exist "server\characters\characters.zip" (
 	echo ^(10^) Original LVM Character IDs are[91m OFF [0m
