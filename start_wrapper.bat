@@ -1103,10 +1103,13 @@ echo :: Opens Offline in a browser of the user's choice. Needs to be a path to a
 echo set CUSTOMBROWSER=n>> utilities\config.bat
 echo:>> utilities\config.bat
 echo :: Lets the launcher know what browser framework is being used. Mostly used by the Flash installer. Accepts "chrome", "firefox", and "n". Default: n>> utilities\config.bat
-echo set BROWSER_TYPE=chrome>> utilities\config.bat
+echo set BROWSER_TYPE=n>> utilities\config.bat
 echo:>> utilities\config.bat
 echo :: Runs through all of the scripts code, while never launching or installing anything. Useful for development. Default: n>> utilities\config.bat
 echo set DRYRUN=n>> utilities\config.bat
+echo:>> utilities\config.bat
+echo :: Helps with waveform toggling. Default: y>> utilities\config.bat
+echo set WAVEFORM=y>> utilities\config.bat
 echo:>> utilities\config.bat
 goto returnfromconfigcopy
 
