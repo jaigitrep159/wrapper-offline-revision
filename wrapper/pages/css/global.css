@@ -63,10 +63,10 @@ header {
 }
 /* small buttons */
 .button_small       { background: #333 }
-.button_small:hover { background: #444; color: #0dabd6 }
+.button_small:hover { background: #444; color: #d85e27 }
 /* big buttons */
 .button_big {
-	background-color: #0dabd6;
+	background-color: #d85e27;
 	width: 160px;
 }
 .button_big:hover {
@@ -112,7 +112,7 @@ header dropdowns
 }
 .dropdown_menu>a:hover {
 	background: #222;
-	color: #0dabd6;
+	color: #d85e27;
 	cursor: pointer;
 }
 /* dropdown header and separation */

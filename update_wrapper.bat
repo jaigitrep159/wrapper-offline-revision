@@ -1,7 +1,7 @@
-:: Wrapper: Offline Updater
+:: Wrapper: Offline (Revision) Updater
 :: Author: octanuary#6596
 :: License: MIT
-title Wrapper: Offline Updater [Initializing...]
+title Wrapper: Offline ^(Revision^) Updater [Initializing...]
 
 ::::::::::::::::::::
 :: Initialization ::
@@ -21,7 +21,7 @@ if not exist wrapper ( goto error_location )
 if not exist server ( goto error_location )
 goto noerror_location
 :error_location
-echo Doesn't seem like this script is in a Wrapper: Offline folder.
+echo Doesn't seem like this script is in a Wrapper: Offline ^(Revision^) folder.
 pause && exit
 :noerror_location
 
@@ -33,17 +33,15 @@ title Wrapper: Offline Updater
 
 if not exist .git ( goto nogit )
 :yesgit
-echo Wrapper: Offline (Revision) Updater
+echo Wrapper: Offline ^(Revision^) Updater
 echo Project lead by Octanuary
 echo:
-echo Enter 1 to update Wrapper: Offline (Revision)
+echo Enter 1 to update Wrapper: Offline ^(Revision^)
 echo Enter 0 to close the updater
 goto wrapperidle
 :nogit
-echo You have not downloaded Wrapper: Offline using the batch installer.
-echo Please download install_wrapper_offline.zip and run the batch file inside.
-pause & exit
-:wrapperidle
+echo You have not downloaded Wrapper: Offline ^(Revision^) using the batch installer.
+echo Please download the installer from GitHub and run the batch file inside.
 echo:
 
 :::::::::::::

@@ -9,6 +9,10 @@ body {
 	background: #eee;
 	margin: 0px;
 }
+/* preview player */
+body.preview_player {
+	background: #262d3f;
+}
 
 /**
 character page stuff

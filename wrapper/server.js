@@ -24,6 +24,7 @@ const movie_thumb = require("./movie/thmb");
 const movie_upload = require("./movie/upload");
 const static_load = require("./static/load");
 const static_page = require("./static/page");
+const static_pageStudio = require("./static/page_studio");
 const theme_list = require("./theme/list");
 const theme_load = require("./theme/load");
 const tts_load = require("./tts/load");
@@ -51,6 +52,7 @@ const functions = [
 	movie_upload,
 	static_load,
 	static_page,
+	static_pageStudio,
 	theme_list,
 	theme_load,
 	tts_load,

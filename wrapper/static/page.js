@@ -95,45 +95,6 @@ module.exports = function (req, res, url) {
 			break;
 		}
 
-		case "/go_full": {
-			let presave =
-				query.movieId && query.movieId.startsWith("m")
-					? query.movieId
-					: `m-${fUtil[query.noAutosave ? "getNextFileId" : "fillNextFileId"]("movie-", ".xml")}`;
-			title = "Video Editor";
-			attrs = {
-				data: process.env.SWF_URL + "/go_full.swf",
-				type: "application/x-shockwave-flash",
-				id: "video_maker",
-			};
-			params = {
-				flashvars: {
-					apiserver: "/",
-					storePath: process.env.STORE_URL + "/<store>",
-					isEmbed: 1,
-					ctc: "go",
-					ut: 50,
-					bs: "default",
-					appCode: "go",
-					page: "",
-					siteId: "go",
-					lid: 13,
-					isLogin: "Y",
-					retut: 1,
-					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-					themeId: "business",
-					tlang: "en_US",
-					presaveId: presave,
-					goteam_draft_only: 1,
-					isWide: 1,
-					collab: 0,
-					nextUrl: "/pages/html/create.html",
-				},
-				allowScriptAccess: "always",
-			};
-			break;
-		}
-
 		case "/player": {
 			title = "Video Player";
 			attrs = {
@@ -144,10 +105,10 @@ module.exports = function (req, res, url) {
 			params = {
 				flashvars: {
 					apiserver: "/",
-					storePath: process.env.STORE_URL + "/<store>",
 					ut: 60,
 					autostart: 1,
 					isWide: 1,
+					storePath: process.env.STORE_URL + "/<store>",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 				},
 				allowScriptAccess: "always",
@@ -190,7 +151,7 @@ module.exports = function (req, res, url) {
 			document.title='${title}',flashvars=${JSON.stringify(params.flashvars)}
 		</script>
 		<script>
-			if (window.location.pathname == "/player" || window.location.pathname == "/go_full") {
+			if (window.location.pathname == "/player" || window.location.pathname == "/optiPlayer") {
 				function hideHeader() {
 					document.getElementById("header").style.display = "none";
 				}
