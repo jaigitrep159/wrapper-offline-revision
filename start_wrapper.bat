@@ -1,5 +1,6 @@
-:: Wrapper: Offline Launcher
+:: Wrapper: Offline (Revision) Launcher
 :: Author: benson#0411
+:: Project lead by: octanuary#6596
 :: License: MIT
 title Wrapper: Offline (Revision) [Initializing...]
 
@@ -48,7 +49,7 @@ if not exist "utilities\checks" md utilities\checks
 :: Operator, attention!
 if not exist "utilities\checks\disclaimer.txt" (
 	echo DISCLAIMER
-  echo:
+  	echo:
 	echo Wrapper: Offline is a project to preserve the original GoAnimate flash-based themes.
 	echo We believe they should be archived for others to use and learn about in the future.
 	echo All business themes have been removed, please use Vyond Studio if you wish to get those.
@@ -119,9 +120,9 @@ call utilities\info.bat
 
 :: Welcome, Director Ford!
 if !VERBOSEWRAPPER!==n ( cls )
-echo Wrapper: Offline (Revision)
+echo Wrapper: Offline ^(Revision^)
 echo A project from VisualPlugin adapted by Benson
-echo 
+echo:
 echo Project continued by the Wrapper: Offline Team
 echo Version !WRAPPER_VER!
 echo:
@@ -141,7 +142,7 @@ if !VERBOSEWRAPPER!==n (
 	echo:
 )
 
-title Wrapper: Offline v!WRAPPER_VER! [Checking dependencies...]
+title Wrapper: Offline (Revision) v!WRAPPER_VER! [Checking dependencies...]
 
 :: Preload variables
 set NEEDTHEDEPENDERS=n
@@ -314,7 +315,7 @@ if !NEEDTHEDEPENDERS!==y (
 	goto skip_dependency_install
 )
 
-title Wrapper: Offline v!WRAPPER_VER! [Installing dependencies...]
+title Wrapper: Offline (Revision) v!WRAPPER_VER! [Installing dependencies...]
 
 :: Preload variables
 set INSTALL_FLAGS=ALLUSERS=1 /norestart
@@ -701,7 +702,7 @@ echo:
 :: Starting Wrapper ::
 ::::::::::::::::::::::
 
-title Wrapper: Offline v!WRAPPER_VER! [Loading...]
+title Wrapper: Offline (Revision) v!WRAPPER_VER! [Loading...]
 
 :: Close existing node apps
 :: Hopefully fixes EADDRINUSE errors??
@@ -756,15 +757,16 @@ echo Wrapper: Offline has been started^^! The video list should now be open.
 :: Post-Start ::
 ::::::::::::::::
 
-title Wrapper: Offline v!WRAPPER_VER!
+title Wrapper: Offline (Revision) v!WRAPPER_VER!
 if !VERBOSEWRAPPER!==y ( goto wrapperstarted )
 :wrapperstartedcls
 cls
 :wrapperstarted
 
 echo:
-echo Wrapper: Offline v!WRAPPER_VER! running
+echo Wrapper: Offline ^(Revision^) v!WRAPPER_VER! running
 echo A project from VisualPlugin adapted by Benson and the Wrapper: Offline Team
+echo Project lead by: !PROJECT_LEAD!
 echo:
 if !VERBOSEWRAPPER!==n ( echo DON'T CLOSE THIS WINDOW^^! Use the quit option ^(0^) when you're done. )
 if !VERBOSEWRAPPER!==y ( echo Verbose mode is on, see the two extra CMD windows for extra output. )
@@ -870,7 +872,7 @@ goto wrapperidle
 echo Opening the importer...
 call utilities\import.bat
 cls
-title Wrapper: Offline v!WRAPPER_VER!
+title Wrapper: Offline (Revision) v!WRAPPER_VER!
 set JUSTIMPORTED=y
 goto wrapperstartedcls
 
@@ -1017,7 +1019,7 @@ echo You must answer Yes or No. && goto exitwrapperretry
 
 :point_extraction
 
-title Wrapper: Offline v!WRAPPER_VER! [Shutting down...]
+title Wrapper: Offline (Revision) v!WRAPPER_VER! [Shutting down...]
 
 :: Shut down Node.js and http-server
 if !VERBOSEWRAPPER!==y (
@@ -1039,7 +1041,7 @@ if !DRYRUN!==y ( echo Go wet your run next time. )
 pause & exit
 
 :exitwithstyle
-title Wrapper: Offline v!WRAPPER_VER! [Shutting down... WITH STYLE]
+title Wrapper: Offline (Revision) v!WRAPPER_VER! [Shutting down... WITH STYLE]
 echo SHUTTING DOWN THE WRAPPER OFFLINE
 PING -n 3 127.0.0.1>nul
 color 9b
@@ -1110,8 +1112,8 @@ goto returnfromconfigcopy
 
 :infocopy
 if not exist utilities ( md utilities )
-echo :: Wrapper: Offline Info>> utilities\info.bat
-echo :: This file is used across Wrapper: Offline. It is not organized, but comments for each setting have been added.>> utilities\info.bat
+echo :: Wrapper: Offline (Revision) Info>> utilities\info.bat
+echo :: This file is used across Wrapper: Offline (Revision). It is not organized, but comments for each setting have been added.>> utilities\info.bat
 echo :: You should not be touching this. Offline relies on this file remaining consistent, and it's easy to mess that up.>> utilities\info.bat
 echo:>> utilities\info.bat
 echo :: Opens this file in Notepad when run>> utilities\info.bat
@@ -1119,14 +1121,14 @@ echo setlocal>> utilities\info.bat
 echo if "%%SUBSCRIPT%%"=="" ( pushd "%~dp0" ^& start notepad.exe info.bat ^& exit )>> utilities\info.bat
 echo endlocal>> utilities\info.bat
 echo:>> utilities\info.bat
-echo :: Wrapper: Offline version>> utilities\info.bat
+echo :: Wrapper version>> utilities\info.bat
 echo set WRAPPER_VER=1.3.0>> utilities\info.bat
 echo:>> utilities\info.bat
-echo :: Wrapper: Offline release type>> utilities\info.bat
-echo set WRAPPER_TYPE=public>> utilities\info.bat
+echo :: Wrapper release type>> utilities\info.bat
+echo set WRAPPER_TYPE=Beta>> utilities\info.bat
 echo:>> utilities\info.bat
-echo :: Dark mode in Wrapper. Default: y>> utilities\info.bat
-echo set DARKMODE=y>> utilities\info.bat
+echo :: Wrapper: Offline (Revision) project lead>> utilities\info.bat
+echo set PROJECT_LEAD=octanuary>> utilities\info.bat
 echo:>> utilities\info.bat
 goto returnfrominfocopy
 
