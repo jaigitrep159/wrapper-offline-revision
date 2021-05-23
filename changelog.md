@@ -17,6 +17,7 @@ GoAnimate Wrapper version has been upgraded to 1.2.7½. Dark mode has been added
   - Removed VFProxy because they wanted their service to be paid and mobile-only
   - Upgraded version of GoAnimate Wrapper to 1.2.7½
 ### Fixed
+  - Lil' Peepz actions
   - HTTP-SERVER/NODEJS HASN'T STARTED windows now let you type commands inside after closing
   - utilites\import.bat now allows indenting inside the Imported Assets XML
   - Common props disabled in Imported Assets
