@@ -1,4 +1,4 @@
-title Wrapper: Offline Import Script
+title Wrapper: Offline (Revision) Import Script
 :: Helps to make importing files using the theme editing workaround easier
 :: Author: benson#0411
 :: License: MIT
@@ -19,7 +19,7 @@ popd utilities
 if !errorlevel! NEQ 0 goto error_location
 goto noerror_location
 :error_location
-echo Doesn't seem like this script is in Wrapper: Offline's utilities folder.
+echo Doesn't seem like this script is in Wrapper: Offline ^(Revision^)'s utilities folder.
 goto end
 :noerror_location
 
@@ -181,11 +181,11 @@ for %%a in (import_these\*) do (
 	copy /y %%a !themefolder!!cfid! >nul
 	pushd !themefolder!
 	if !cftype!=="img" (
-		if not exist !cfsubtype! ( md !cfsubtype! )
-		pushd !cfsubtype!
+		if not exist "!cfsubtype!" ( md "!cfsubtype!" )
+		pushd "!cfsubtype!"
 	)
 	if !cftype!=="sound" (
-		if not exist sound ( md sound )
+		if not exist "sound" ( md sound )
 		pushd sound
 	)
 	if exist "!cfid!" (
@@ -244,8 +244,8 @@ for %%a in (import_these\*) do (
 	:: Print the last of theme.xml to our temp file
 	more +!cfline! theme.xml>> temp.xml
 	:: Make our temp file the normal file
-	copy /y temp.xml theme.xml >nul
-	del temp.xml
+	copy /y "temp.xml" "theme.xml" >nul
+	del "temp.xml"
 	:: NOTE: There's almost certainly a way to optimize this by reading off temp.xml if it exists, I'm just too lazy to do it and I just wanna get 1.2.0 out. I have another project I need to work on. Wrapper: Offline is fun, but it's getting in my way. I'm proud of myself for finishing this importer, but I am very fucking glad I'm done coding it. This has been me slightly ranting about my life in a random batch comment thank you all for coming like and subscribe watch benson on youtube
 	popd
 	echo !cfname! imported.
@@ -253,7 +253,7 @@ for %%a in (import_these\*) do (
 	echo:
 	
 	:: Copy theme.xml to _THEMES folder
-	copy /y !themefolder!theme.xml wrapper\_THEMES\import.xml
+	copy /y "!themefolder!\theme.xml" "wrapper\_THEMES\import.xml"
 
 	:: Move file out of the way so we don't repeat it
 	pushd import_these
