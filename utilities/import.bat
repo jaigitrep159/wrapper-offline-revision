@@ -178,7 +178,7 @@ for %%a in (import_these\*) do (
 
 	echo Moving file to theme...
 	echo:
-	copy /y %%a !themefolder!!cfid! >nul
+	copy /y "%%a" "!themefolder!\!cfid!" >nul
 	pushd !themefolder!
 	if !cftype!=="img" (
 		if not exist "!cfsubtype!" ( md "!cfsubtype!" )
